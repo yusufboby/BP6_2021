@@ -1,0 +1,29 @@
+package bp1_2021;
+import java.util.Scanner;
+public class BP6_2021 {
+    public static void main(String[] args) {
+        
+        //inisialisasi
+        int i = 1, bil, n;
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("===PROGRAM MENAMPILKAN BILANGAN PRIMA===");
+        System.out.print("MASUKKAN BANYAKNYA BILANGAN PRIMA : ");
+            n = input.nextInt();
+
+        //kondisi
+        for(int a = 2; i <= n; a++) {
+        bil = 1;
+            for(int b = 2; b < a; b++) {
+                    if(a % b == 0) {
+                    bil++;
+                }
+            }
+        if(bil == 1) {
+            System.out.println(a + " ");
+         i = i + 1;
+                }
+            }
+        
+        }
+}
